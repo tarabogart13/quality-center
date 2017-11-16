@@ -2,7 +2,7 @@
     "name": "qaservcecenter",
     "version": "1.0.0",
     "description": "Sumitomo Quality Service Center",
-    "repository": "https://github.com/tarabogart13/splash-extended",
+    "repository": "https://github.com/tarabogart13/quality-center",
     "engines": {
         "node": ">=6.2.0 <7.0.0",
         "npm": "~3.9.5"
