@@ -9,7 +9,8 @@ input, textarea, a {
 }
 
 ::-webkit-input-placeholder {
-	color: #606060;
+	/*color: #606060;*/
+	color: #000000;
 }
 
 :-moz-placeholder {
