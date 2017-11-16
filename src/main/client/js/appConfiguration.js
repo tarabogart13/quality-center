@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('logicline', ['ngMaterial'])
+angular.module('logicline')
 /*localStorageServiceProvider */
 .config(['localStorageServiceProvider', function(localStorageServiceProvider) {
   localStorageServiceProvider.setPrefix('logicline');
