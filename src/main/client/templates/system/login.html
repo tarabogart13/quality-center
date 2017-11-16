@@ -9,14 +9,10 @@
     <form name="loginForm" ng-submit="performLogin(loginForm.$valid, login);" novalidate>
         <div class="row">
             <div class="small-12 columns">
-                <!-- Start: Headline & help
-        <h3 class="headline--border">
-          {{ 'LOGIN_HEADLINE' | translate }}
-        </h3>
-		-->
+                <!-- Start: Headline & help -->
                 <h3 class="headline">{{ 'LOGIN_HEADLINE' | translate }}</h3>
                 <p class="content--text">
-                    {{ 'LOGIN_SUBHEADLINE' | translate }}
+                    <!--{{ 'LOGIN_SUBHEADLINE' | translate }}-->
                     <span class="help--error" ng-if="isEmptyCredentials">{{ 'LOGIN_SUBHEADLINE' | translate }}</span>
                     <span class="help--error" ng-if="isLoginInvalid">{{ 'LOGIN_ERROR' | translate }}</span>
                     <span class="help--error" ng-if="isLoginForbidden">{{ 'LOGIN_FORBIDDEN' | translate }}</span>
