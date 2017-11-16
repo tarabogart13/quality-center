@@ -35,6 +35,9 @@
     
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     
+      <!-- Angular Material Library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    
       <!-- App -->
       <script src="./js/app.js"></script>
       <script src="./js/appRoutes.js"></script>
@@ -71,10 +74,6 @@
     <script src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
   </head>
   <body ng-app="logicline" class="position--relative container">
-    
-    <!-- Angular Material Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-    
     <!-- Start: Header -->
     <header class="header" ng-class="{'header--logged-in': User, 'csc--header': User.isCSCUser}">
       <div ng-include="'templates/_header.html'"></div>
@@ -89,13 +88,5 @@
     <footer class="footer text--center">
     	<div ng-include="'templates/_footer.html'"></div>
     </footer>
-    
-    <!-- Your application bootstrap  -->
-  <script type="text/javascript">    
-    /**
-     * You must include the dependency on 'ngMaterial' 
-     */
-    angular.module('logicline', ['ngMaterial']);
-  </script>
   </body>
 </html>
