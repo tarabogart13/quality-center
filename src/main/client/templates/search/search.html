@@ -34,12 +34,12 @@
 		  </div>
     </div>
   </div>
-		<div class="row spacing--top--15">
+	<div class="row spacing--top--15">
       <div class="small-12 columns">
         <!-- Start: Customer list -->
           <ul class="small-12 columns list">
             <li class="list__item cursor--pointer" ng-repeat="res in filteredCustomers | orderBy:'lastName'" ng-click="chooseResult(res.userIdFk);">
-              {{ res.lastName }}
+              {{ res.lastName }}, {{ res.firstname}},
             </li>
           </ul>
         <!-- End: Customer list -->
