@@ -10,7 +10,7 @@ angular.module('logicline.controllers')
         'appAuthorizationService',
         function($rootScope, $scope, $window, localStorageService, appAuthenticationService, appAuthorizationService) {
             var captcha = {
-                publicKey: '6LciewUTAAAAACjcP9xWUXYeuPi4REa6KpohnPMN',
+                publicKey: '6LcjEDkUAAAAAHwHejQvH7na17yG8m5LsKNoRg8N',
                 isStarted: false,
                 lockPeriodMin: 15,
                 totatlAttempt: 1,
