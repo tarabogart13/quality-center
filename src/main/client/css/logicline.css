@@ -117,11 +117,20 @@ body {
 	color: #000000;
 }
 
-/*------------------------------------*\ $BUTTONS
+/*------------------------------------*\
+$BUTTONS
 \*------------------------------------*/
 button:focus, button:active { outline: none; box-shadow: none; border: none; }
 
-.btn { -webkit-appearance: none; display: inline-block; border: none; font-size: 17px; text-decoration: none; padding: 0 22px; line-height: 38px; border-radius: 4px; }
+.btn {
+	-webkit-appearance: none;
+	display: inline-block;
+	border: none;
+	font-size: 17px;
+	text-decoration: none; padding: 0 22px;
+	line-height: 38px;
+	border-radius: 4px;
+}
 .btn:hover, .btn:focus, .btn:active { outline: none; }
 
 .btn-holder { display: inline-block; }
@@ -1180,16 +1189,18 @@ a:hover {
 .btn {
   font-weight: 400;
   background: #fff;
-  color: #E00817;
-  border: 2px solid #E00817;
+  /*color: #E00817;
+  border: 2px solid #E00817;*/
+  color: #003399;
+  border: 2px solid #003399;	
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #E00817;
+  background: #003399;
   color: #fff;
-  border: 2px solid #E00817;
+  border: 2px solid #003399;
 }
 
 .list__item {
