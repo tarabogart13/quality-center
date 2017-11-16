@@ -1113,8 +1113,7 @@ a:hover {
   width: 100%;
   height: 100%;
   /*background: #282A2B;*/
-  background: #015AAC;
-  opacity: 0.2;
+  background: rgba(0,75,144,0.2);
 }
 
 ::-webkit-input-placeholder {
