@@ -7,36 +7,14 @@
 <div class="content__inner--login">
     <!-- Start: Form -->
     
-    <form role="form" ng-submit="login()" layout="column" layout-align="center center" class="md-whiteframe-z1">
-        <md-toolbar>
-            <h2 class="md-toolbar-tools">{{ 'LOGIN_HEADLINE' | translate }}</h2>
-        </md-toolbar>
-        
-        <md-content layout-padding class="first">
-            <md-input-container class="md-icon-float">
-                        <label>{{ 'LOGIN_FORM_ORGANIZATION_ID' | translate }}</label>
-                        <md-icon md-font-set="material-icons">people</md-icon>
-                        <input ng-model="credentials.username" id="username" name="username">
-                    </md-input-container>
-                </md-content>
-                
-                <md-content layout-padding>
-                    <md-input-container class="md-icon-float">
-                        <label>{{ 'LOGIN_FORM_PASSWORD' | translate }}</label>
-                        <md-icon md-font-set="material-icons">lock</md-icon>
-                        <input ng-model="credentials.password" id="password" name="password" type="password">
-                    </md-input-container>
-                </md-content>
-    </form>
-    
-    <!--<form name="loginForm" ng-submit="performLogin(loginForm.$valid, login);" novalidate>
+    <form name="loginForm" ng-submit="performLogin(loginForm.$valid, login);" novalidate>
         <div class="row">
             <div class="small-12 columns">
                 <!-- Start: Headline & help -->
-               <!-- <h3 class="headline">{{ 'LOGIN_HEADLINE' | translate }}</h3>
+               <h3 class="headline">{{ 'LOGIN_HEADLINE' | translate }}</h3>
                 <p class="content--text">
                     <!--{{ 'LOGIN_SUBHEADLINE' | translate }}-->
-                  <!--  <span class="help--error" ng-if="isEmptyCredentials">{{ 'LOGIN_SUBHEADLINE' | translate }}</span>
+                    <span class="help--error" ng-if="isEmptyCredentials">{{ 'LOGIN_SUBHEADLINE' | translate }}</span>
                     <span class="help--error" ng-if="isLoginInvalid">{{ 'LOGIN_ERROR' | translate }}</span>
                     <span class="help--error" ng-if="isLoginForbidden">{{ 'LOGIN_FORBIDDEN' | translate }}</span>
                     <span clasS="help--error" ng-if="isConfigInvalid">{{ 'LOGIN_INVALID_CONFIG' | translate }} <a target="_new" style="text-decoration: underline;" href="http://bit.ly/28jYOL3">{{ 'HERE' | translate }}</a>.</span>
@@ -53,8 +31,13 @@
                     required ng-model="login.password" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.password.$error.required || loginForm.password.$invalid) || isLoginInvalid || isEmptyCredentials) }"
                 />-->
                 
+                <md-input-container>
+  <label>Username</label>
+  <input ng-model="user.name" type="text">
+</md-input-container>
+                
                 <!-- End: Mandatory fields -->
-            <!--</div>
+            </div>
         </div>
 
         <div class="row">
@@ -66,11 +49,11 @@
         <div class="row">
             <div class="small-12 columns">
                 <!-- Start: Submit -->
-               <!-- <input type="submit" value="{{ 'BTN_LOGIN' | translate }}" class="cursor--pointer spacing--top--20 btn btn--submit" />
+                <input type="submit" value="{{ 'BTN_LOGIN' | translate }}" class="cursor--pointer spacing--top--20 btn btn--submit" />
                 <!-- End: Submit -->
-           <!-- </div>
+           </div>
         </div>
-    </form>-->
+    </form>
     <!-- End: Form -->
 </div>
 <!-- End: Content -->
