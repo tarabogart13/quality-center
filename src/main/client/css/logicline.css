@@ -1020,11 +1020,11 @@ nav ul li.active { background: #e5e5e5; color: #5e5e5e; }
 }
 
 ::-webkit-input-placeholder {
-	color: #e5e5e5;  
+	color: #000000;  
 }
 
 input:-moz-placeholder {
-  color: #e5e5e5;
+  color: #000000;
 }
 
 
@@ -1128,19 +1128,19 @@ a:hover {
 }
 
 ::-webkit-input-placeholder {
-  color: #d3d3d3;
+  color: #000000;
 }
 
 :-moz-placeholder {
-  color: #d3d3d3;
+  color: #000000;
 }
 
 ::-moz-placeholder {
-  color: #d3d3d3;
+  color: #000000;
 }
 
 :-ms-input-placeholder {
-  color: #d3d3d3;
+  color: #000000;
 }
 
 .input {
