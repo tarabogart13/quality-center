@@ -21,7 +21,8 @@ input, textarea, a {
 }
 
 :-ms-input-placeholder {
-	color: #606060;
+	/*color: #606060;*/
+	color: #000000;
 }
 
 /*------------------------------------*\
