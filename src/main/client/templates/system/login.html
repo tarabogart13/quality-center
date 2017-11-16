@@ -23,12 +23,29 @@
                 <!-- End: Headline & help -->
 
                 <!-- Start: Mandatory fields -->
-                <input type="text" name="username" placeholder="{{ 'LOGIN_FORM_ORGANIZATION_ID' | translate }}" class="small-12 medium-12 input"
+                <!--<input type="text" name="username" placeholder="{{ 'LOGIN_FORM_ORGANIZATION_ID' | translate }}" class="small-12 medium-12 input"
                     required ng-model="login.username" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.username.$error.required || loginForm.username.$invalid) || isLoginInvalid || isEmptyCredentials) }"
                 />
                 <input type="password" name="password" placeholder="{{ 'LOGIN_FORM_PASSWORD' | translate }}" class="small-12 medium-12 input"
                     required ng-model="login.password" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.password.$error.required || loginForm.password.$invalid) || isLoginInvalid || isEmptyCredentials) }"
-                />
+                />-->
+                
+                <md-content layout-padding class="first">
+                    <md-input-container class="md-icon-float">
+                        <label>{{ 'LOGIN_FORM_ORGANIZATION_ID' | translate }}</label>
+                        <md-icon md-font-set="material-icons">people</md-icon>
+                        <input ng-model="credentials.username" id="username" name="username">
+                    </md-input-container>
+                </md-content>
+                
+                <md-content layout-padding>
+                    <md-input-container class="md-icon-float">
+                        <label>{{ 'LOGIN_FORM_PASSWORD' | translate }}</label>
+                        <md-icon md-font-set="material-icons">lock</md-icon>
+                        <input ng-model="credentials.password" id="password" name="password" type="password">
+                    </md-input-container>
+                </md-content>
+                
                 <!-- End: Mandatory fields -->
             </div>
         </div>
