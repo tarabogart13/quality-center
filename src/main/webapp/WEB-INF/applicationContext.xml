@@ -27,7 +27,7 @@
 	</bean>
 
 	<bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl">
-		<property name="privateKey" value="6LciewUTAAAAAEU8qfsCy4gcO1MxzMqFoezv1jDk" />
+		<property name="privateKey" value="6LcjEDkUAAAAAC22NzbyFD22xoEM60-qVQb1Bo1V" />
 	</bean>
 
 	<tx:annotation-driven />
@@ -44,16 +44,15 @@
 
 	<beans profile="default">
 
-
 		<!-- To develop locally please add the credentials from your heroku postgresDb -->
 
 		<bean id="dataSource"
 			class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 			<property name="driverClassName" value="org.postgresql.Driver" />
 			<property name="url"
-				value="jdbc:postgresql://yourserver:yourport/yourdatabase?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
-			<property name="username" value="yourusername" />
-			<property name="password" value="yourpassword" />
+				value="jdbc:postgresql://ec2-50-19-236-223.compute-1.amazonaws.com:5432/dfnrl4l6bl83gg?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+			<property name="username" value="juezjjxtzwqkex" />
+			<property name="password" value="3fd19b9777c50f0b5c24782237f480acec72d3169a2f8515cea787ce87af600c" />
 		</bean>
 
 		<jdbc:initialize-database data-source="dataSource"
