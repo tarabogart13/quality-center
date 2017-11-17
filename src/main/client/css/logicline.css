@@ -902,11 +902,11 @@ nav ul li.active { background: #e5e5e5; color: #5e5e5e; }
 .box { padding: 18px 3% 18px 3%; margin-right: 47px; }
 
 .box--cerulean { background: #e5e5e5; border-radius: 5px;
-    border-top: 2px solid #e10707; margin-bottom: 20px;}
+    border-top: 2px solid #003399; margin-bottom: 20px;}
     
 .box--cerulean:last-child {float: left !important;}
 
-.box--cerulean:hover, .box--cerulean:focus {color: #e10707; }
+.box--cerulean:hover, .box--cerulean:focus {color: #003399; }
 
 .box__headline { font-size: 1.125em; margin-bottom: 5px; }
 
