@@ -24,6 +24,11 @@
                 <!-- End: Headline & help -->
 
                 <!-- Start: Mandatory fields -->
+                <md-input-container>
+  <label>Color</label>
+  <input ng-model="color" required md-maxlength="10" type="text">
+</md-input-container>
+                
                 <input type="text" name="username" placeholder="{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}" class="small-12 medium-12 input"
                     required ng-model="login.username" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.username.$error.required || loginForm.username.$invalid) || isLoginInvalid || isEmptyCredentials) }"
                 />
