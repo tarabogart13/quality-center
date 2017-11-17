@@ -6,7 +6,7 @@
         ng-click="goTo(isSearchActive? 'customer_search_view': 'dashboard');">
       {{ 'NAVIGATION_DASHBOARD' | translate }}
     </li>
-    <li class="small-12 medium-3 large-3 columns header__username text--right cursor--pointer nav__item"
+    <li class="small-12 medium-3 large-3 columns text--right cursor--pointer nav__item"
         ng-click="goTo('user_edit', {userId: userIdFk});">
       {{'HELLO' | translate}} {{ User.username }}
     </li>
