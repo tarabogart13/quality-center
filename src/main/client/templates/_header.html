@@ -9,7 +9,7 @@
   <!-- Start: User -->
   <div class="small-10 medium-6 columns header__username text--right">
   	<div ng-if="User">
-      <span class="display--inline--block header__username__name">{{'HELLO' | translate}} {{ User.username }}</span>
+      <span class="display--inline--block header__username__name">{{'HELLO' | translate}} <a class="cursor--pointer" ng-click="goTo('user_edit', {userId: userIdFk});">{{ User.username }}</a></span>
       <span class="display--inline--block cursor--pointer header__username__logout" logout>{{'BTN_LOGOUT' | translate}}</span>
   	</div>
   </div>
