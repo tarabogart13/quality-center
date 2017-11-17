@@ -290,7 +290,6 @@ select { width: 100%; }
 
 .column, .columns { padding-left: 0.9375em; padding-right: 0.9375em; width: 100%; float: left; }
 
-
 [class*="column"] + [class*="column"]:last-child { margin-right: 0; float: right;}
 
 [class*="column"] + [class*="column"].end { float: left; }
@@ -938,20 +937,53 @@ $PRELOADER
 \*------------------------------------*/
 .preloader {
 	display: none;
-	position: absolute; background: rgba(229, 229, 229, 0.9); width: 100%; z-index: 1000; }
+	position: absolute;
+	background: rgba(229, 229, 229, 0.9);
+	width: 100%;
+	z-index: 1000;
+}
 
-.loader { display: block; width: 7em; position: relative; top: 50%; margin: 0px auto; }
+.loader {
+	display: block;
+	width: 7em;
+	position: relative;
+	top: 50%;
+	margin: 0px auto;
+}
 
-@-webkit-keyframes rotate { 0% { -webkit-transform: translateY(0%); }
-  30% { -webkit-transform: translateY(-0.35em); }
-  50% { -webkit-transform: translateY(0%); }
-  70% { -webkit-transform: translateY(0.35em); } }
-.loader { display: block; }
-.loader .inner1, .loader .inner2, .loader .inner3 { display: inline-block; margin: 0.175em; width: 0.7em; height: 0.7em; border: 1px solid #ff0000; border-radius: 1.4em; background-color: #ff0000; -webkit-transform-origin: 50%; -webkit-animation-duration: 0.75s; -webkit-animation-name: rotate; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
-.loader .inner2 { -webkit-animation-delay: 0.1875s; }
-.loader .inner3 { -webkit-animation-delay: 0.375s; }
+@-webkit-keyframes rotate {
+	0% { -webkit-transform: translateY(0%); }
+	30% { -webkit-transform: translateY(-0.35em); }
+	50% { -webkit-transform: translateY(0%); }
+	70% { -webkit-transform: translateY(0.35em); }
+}
 
-/*------------------------------------*\ $SEARCH
+.loader {
+	display: block;
+}
+.loader .inner1, .loader .inner2, .loader .inner3 {
+	display: inline-block;
+	margin: 0.175em;
+	width: 0.7em;
+	height: 0.7em;
+	border: 1px solid #003399;
+	border-radius: 1.4em;
+	background-color: #003399;
+	-webkit-transform-origin: 50%;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-name: rotate;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.loader .inner2 {
+	-webkit-animation-delay: 0.1875s;
+}
+.loader .inner3 {
+	-webkit-animation-delay: 0.375s;
+}
+
+/*------------------------------------*\
+$SEARCH
 \*------------------------------------*/
 
 /***********************
