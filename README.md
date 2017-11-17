@@ -7,11 +7,6 @@ __Login as an Administrator:__
 username: admin
 password: admin
 
-
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-
 After configuring the Heroku Connect Addon, please import the contacts-mapping.json into Heroku Connect.
 
 
