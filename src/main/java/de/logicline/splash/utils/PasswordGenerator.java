@@ -3,9 +3,9 @@ package de.logicline.splash.utils;
 import java.util.Random;
 
 /** 
- * 
  * Simple Util class to generate cryptic passwords
  */
+
 public class PasswordGenerator {
 	
 	private static final String ALPHA_CAPS 	= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,11 +14,10 @@ public class PasswordGenerator {
 	private static final String SPL_CHARS	= "!@#$%&*_=+-/";
 	
 	
-	public String generatePswd(int minLen, int maxLen, int noOfCAPSAlpha, 
-			int noOfDigits, int noOfSplChars) {
+	public String generatePswd(int minLen, int maxLen, int noOfCAPSAlpha, int noOfDigits, int noOfSplChars) {
 		if(minLen > maxLen)
 			throw new IllegalArgumentException("Min. Length > Max. Length!");
-		if( (noOfCAPSAlpha + noOfDigits + noOfSplChars) > minLen )
+		if((noOfCAPSAlpha + noOfDigits + noOfSplChars) > minLen)
 			throw new IllegalArgumentException
 			("Min. Length should be atleast sum of (CAPS, DIGITS, SPL CHARS) Length!");
 		Random rnd = new Random();
@@ -46,7 +45,7 @@ public class PasswordGenerator {
 		return password;
 	}
 	
-	private int getNextIndex(Random rnd, int len, char[] pswd) {
+	private int getNextIndex(Random rnd, int len, char[] pswd){
 		int index = rnd.nextInt(len);
 		while(pswd[index = rnd.nextInt(len)] != 0);
 		return index;
