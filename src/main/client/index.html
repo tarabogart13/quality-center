@@ -17,12 +17,22 @@
       <link href="./css/logicline.css" rel="stylesheet">
     <!-- endbuild -->
     
+     <style type="text/css">
+        /** Hide when Angular is not yet loaded and initialized */
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+     </style>
+
+    <!-- build:css styles/lib.css -->
+     <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+    
     <!-- build:js js/logicline.min.js -->
       <!-- AngularJS -->
       <script src="./lib/vendor/bower_components/angular/angular.js"></script>
       <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
       <script src="/bower_components/angular-material/angular-material.js"></script>
-      <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
 
       <!-- Restangular + lodash -->
       <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
