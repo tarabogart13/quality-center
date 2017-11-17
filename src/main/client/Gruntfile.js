@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 		'bower_components/ng-file-upload/angular-file-upload-shim.min.js',
 		'bower_components/angular-recaptcha/release/angular-recaptcha.min.js',
 		'bower_components/angular-material/angular-material.min.js',
+		'bower_components/angular-material/angular-material.css',
 		'bower_components/angular-material-data-table/dist/md-data-table.min.js'
 	];
 
