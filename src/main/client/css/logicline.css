@@ -912,15 +912,28 @@ nav ul li.active { background: #e5e5e5; color: #5e5e5e; }
 
 .box__content { font-size: 0.75em; }
 
-/*------------------------------------*\ $LIST
+/*------------------------------------*\
+$LIST
 \*------------------------------------*/
-.list { list-style-type: none; margin: 0; padding: 0; }
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
-.list__item { background: #e5e5e5; color: #ff0000; margin-bottom: 10px; padding: 13px 20px; }
+.list__item {
+	background: #e5e5e5;
+	color: #ff0000;
+	margin-bottom: 10px;
+	padding: 13px 20px;
+}
 
-/*------------------------------------*\ $PRELOADER
+/*------------------------------------*\
+$PRELOADER
 \*------------------------------------*/
-.preloader { display: none; position: absolute; background: rgba(229, 229, 229, 0.9); width: 100%; z-index: 1000; }
+.preloader {
+	display: none;
+	position: absolute; background: rgba(229, 229, 229, 0.9); width: 100%; z-index: 1000; }
 
 .loader { display: block; width: 7em; position: relative; top: 50%; margin: 0px auto; }
 
@@ -1215,7 +1228,7 @@ a:hover {
 .list__item:hover {
   box-shadow: 0 0 5px 1px #909090;
   transition: box-shadow 0.5s;
-  border-left: 2px solid #E00817;
+  border-left: 2px solid #003399;
 }
 
 .list__item:active {
