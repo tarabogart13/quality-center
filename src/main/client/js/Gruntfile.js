@@ -12,10 +12,7 @@ module.exports = function(grunt) {
 		'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
 		'bower_components/angular-local-storage/dist/angular-local-storage.min.js',
 		'bower_components/ng-file-upload/angular-file-upload.min.js',
-		'bower_components/ng-file-upload/angular-file-upload-shim.min.js',
-		'bower_components/angular-material/angular-material.min.js',
-		'bower_components/angular-material/angular-material.css',
-		'bower_components/angular-material-data-table/dist/md-data-table.min.js'
+		'bower_components/ng-file-upload/angular-file-upload-shim.min.js'
 	];
 
 	grunt.initConfig({
