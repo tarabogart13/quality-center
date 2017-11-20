@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module('logicline', ['ngMaterial','ngAnimate','ngAria','ngMessages'])
-
-//angular.module('logicline',['ngMaterial','ngAnimate','ngAria','ngMessages']);
-
+angular.module('logicline', ['gettext', 'ui.router', 'angularMoment', 'ngMaterial', 'md.data.table',
+    'angular-loading-bar', 'templates', 'angular-cache', 'duScroll', 'ngFileUpload', 'vcRecaptcha',
+'ngFileSaver'])
 /*localStorageServiceProvider */
 .config(['localStorageServiceProvider', function(localStorageServiceProvider) {
   localStorageServiceProvider.setPrefix('logicline');
