@@ -13,7 +13,9 @@ module.exports = function(grunt) {
 		'bower_components/angular-local-storage/dist/angular-local-storage.min.js',
 		'bower_components/ng-file-upload/angular-file-upload.min.js',
 		'bower_components/ng-file-upload/angular-file-upload-shim.min.js',
-		'bower_components/angular-recaptcha/release/angular-recaptcha.min.js'
+		'bower_components/angular-aria/angular-aria.js',
+		'bower_components/angular-animate/angular-animate.js',
+		'bower_components/angular-material/angular-material.js'
 	];
 
 	grunt.initConfig({
