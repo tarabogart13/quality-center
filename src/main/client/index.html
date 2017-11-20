@@ -12,23 +12,16 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic' rel='stylesheet' type='text/css'>
-    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-    
     <!-- build:css css/logicline.min.css -->
-    <link href="./css/logicline.css" rel="stylesheet">
+      <link href="./css/logicline.css" rel="stylesheet">
     <!-- endbuild -->
+    <!-- build:js js/logicline.min.js -->
+      <!-- AngularJS -->
+      <script src="./lib/vendor/bower_components/angular/angular.js"></script>
+      <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-    <!-- build:css styles/lib.css -->
-    <!-- <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">-->
-    <!-- endbuild -->
-    
-    <!-- AngularJS -->
-    <script src="./lib/vendor/bower_components/angular/angular.js"></script>
-    <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <!--<script src="./lib/vendor/bower_components/angular-material/angular-material.js"></script>-->
-
-    <!-- Restangular + lodash -->
-    <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
+      <!-- Restangular + lodash -->
+      <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/lodash/dist/lodash.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script> 
       <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload.min.js"></script> 
@@ -37,7 +30,7 @@
       <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate/angular-translate.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
-    
+
       <!-- App -->
       <script src="./js/app.js"></script>
       <script src="./js/appRoutes.js"></script>
@@ -73,22 +66,18 @@
 
     <script src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
   </head>
-  
   <body ng-app="logicline" class="position--relative container">
     <!-- Start: Header -->
     <header class="header" ng-class="{'header--logged-in': User, 'csc--header': User.isCSCUser}">
       <div ng-include="'templates/_header.html'"></div>
     </header>
     <!-- End: Header -->
-    
     <!-- Start: Navigation -->
     <div ng-include="'templates/_navigation.html'"></div>
     <!-- End: Navigation -->
-    
     <!-- Start: ui-view -->
     <div ui-view class="content"></div>
-    <!-- End: ui-view -->
-    
+    <!-- End: ui-view -->   
     <footer class="footer text--center">
     	<div ng-include="'templates/_footer.html'"></div>
     </footer>
