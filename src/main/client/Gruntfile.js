@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 		'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
 		'bower_components/angular-local-storage/dist/angular-local-storage.min.js',
 		'bower_components/ng-file-upload/angular-file-upload.min.js',
-		'bower_components/ng-file-upload/angular-file-upload-shim.min.js'
+		'bower_components/ng-file-upload/angular-file-upload-shim.min.js',
+		'bower_components/angular-recaptcha/release/angular-recaptcha.min.js'
 	];
 
 	grunt.initConfig({
