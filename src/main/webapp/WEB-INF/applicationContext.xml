@@ -50,9 +50,9 @@
 			class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 			<property name="driverClassName" value="org.postgresql.Driver" />
 			<property name="url"
-				value="jdbc:postgresql://ec2-50-19-236-223.compute-1.amazonaws.com:5432/dfnrl4l6bl83gg?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
-			<property name="username" value="juezjjxtzwqkex" />
-			<property name="password" value="3fd19b9777c50f0b5c24782237f480acec72d3169a2f8515cea787ce87af600c" />
+				value="jdbc:postgresql://ec2-54-225-70-53.compute-1.amazonaws.com:5432/d9c17ljb1un8k5?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+			<property name="username" value="cbkokjvdvkfvpo" />
+			<property name="password" value="e5c7fe5721eac896d7523c01746048294b73bdd7d1895c4c284d2f463672cdfc" />
 		</bean>
 
 		<jdbc:initialize-database data-source="dataSource"
