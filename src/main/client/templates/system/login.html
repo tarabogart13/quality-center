@@ -2,37 +2,46 @@
 <div ng-include="'templates/_preloader.html'"></div>
 <!-- End: Preloader -->
 
-<md-content ng-app="content__inner--login" ng-submit="performLogin(loginForm.$valid, login);" novalidate layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
-      <md-card flex="flex" flex-gt-sm="50" flex-gt-md="33">
+<section layout="column" layout-align="center center" layout-wrap>
+
+    <form role="loginForm" ng-submit="login()" layout="column" layout-align="center center" class="md-whiteframe-z1">
+
         <md-toolbar>
-          <div class="md-toolbar-tools">
-            <h2><span>{{ 'LOGIN_HEADLINE' | translate }}</span></h2>
-          </div>
+            <h2 class="md-toolbar-tools">
+                {{'authorization' | translate}}
+            </h2>
         </md-toolbar>
-        <md-card-content>
-          <form name="loginForm">
-            <md-input-container class="md-block">
-              <label>{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}</label>
-              <input type="text" name="email" ng-model="vm.formData.email" placeholder="{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}"
-                     required ng-model="login.username" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.username.$error.required || loginForm.username.$invalid) || isLoginInvalid || isEmptyCredentials) }"
-                     />
-              <div ng-messages="Form.email.$error" role="alert" multiple="">
-                <div ng-message="required" class="my-message">Please enter your email.</div>
-              </div>
+
+        <md-content layout-padding class="first">
+            <md-input-container class="md-icon-float">
+                <label>{{'username' | translate}}</label>
+                <md-icon md-font-set="material-icons">people</md-icon>
+                <input ng-model="credentials.username" id="username" name="username">
             </md-input-container>
-                
-            <md-input-container class="md-block">
-              <label>Password</label>
-              <input type="password" name="password" ng-model="vm.formData.password" placeholder="password" required="" md-maxlength="16"/>
-              <div ng-messages="Form.password.$error" role="alert" multiple="">
-                <div ng-message="required" class="my-message">Please enter your password.</div>
-                <div ng-message="md-maxlength" class="my-message">Too long.</div>
-              </div>
+        </md-content>
+
+        <md-content layout-padding>
+            <md-input-container class="md-icon-float">
+                <label>{{'password' | translate}}</label>
+                <md-icon md-font-set="material-icons">lock</md-icon>
+                <input ng-model="credentials.password" id="password" name="password" type="password">
             </md-input-container>
-                
-            <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary">&nbsp Login &nbsp</md-button>
-          </form>
-        </md-card-content>
-      </md-card>
-    </md-content>
+        </md-content>
+
+        <div
+                vc-recaptcha
+                theme="'dark'"
+                key="model.key"
+                on-create="setWidgetId(widgetId)"
+                on-success="setResponse(response)"
+                on-expire="cbExpiration()"
+        ></div>
+
+        <md-content layout-padding>
+            <md-button type="submit" class="md-raised md-primary">{{'login' | translate}}</md-button>
+        </md-content>
+
+    </form>
+
+</section>
 <!-- End: Content -->
