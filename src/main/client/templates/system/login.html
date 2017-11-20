@@ -8,13 +8,13 @@
 
         <md-toolbar>
             <h2 class="md-toolbar-tools">
-                {{'authorization' | translate}}
+                {{ 'LOGIN_HEADLINE' | translate }}
             </h2>
         </md-toolbar>
 
         <md-content layout-padding class="first">
             <md-input-container class="md-icon-float">
-                <label>{{'username' | translate}}</label>
+                <label>{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}</label>
                 <md-icon md-font-set="material-icons">people</md-icon>
                 <input ng-model="credentials.username" id="username" name="username">
             </md-input-container>
@@ -22,7 +22,7 @@
 
         <md-content layout-padding>
             <md-input-container class="md-icon-float">
-                <label>{{'password' | translate}}</label>
+                <label>{{'LOGIN_FORM_PASSWORD' | translate}}</label>
                 <md-icon md-font-set="material-icons">lock</md-icon>
                 <input ng-model="credentials.password" id="password" name="password" type="password">
             </md-input-container>
