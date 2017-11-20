@@ -15,28 +15,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- build:css css/logicline.min.css -->
-      <link href="./css/logicline.css" rel="stylesheet">
+    <link href="./css/logicline.css" rel="stylesheet">
     <!-- endbuild -->
-    
-     <style type="text/css">
-        /** Hide when Angular is not yet loaded and initialized */
-        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-            display: none !important;
-        }
-     </style>
 
     <!-- build:css styles/lib.css -->
-     <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
+    <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
     <!-- endbuild -->
     
-    <!-- build:js js/logicline.min.js -->
-      <!-- AngularJS -->
-      <script src="./lib/vendor/bower_components/angular/angular.js"></script>
-      <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-      <script src="/bower_components/angular-material/angular-material.js"></script>
+    <!-- AngularJS -->
+    <script src="./lib/vendor/bower_components/angular/angular.js"></script>
+    <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
 
-      <!-- Restangular + lodash -->
-      <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
+    <!-- Restangular + lodash -->
+    <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/lodash/dist/lodash.min.js"></script>
       <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script> 
       <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload.min.js"></script> 
@@ -81,20 +73,34 @@
 
     <script src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
   </head>
+  
   <body ng-app="logicline" class="position--relative container">
     <!-- Start: Header -->
     <header class="header" ng-class="{'header--logged-in': User, 'csc--header': User.isCSCUser}">
       <div ng-include="'templates/_header.html'"></div>
     </header>
     <!-- End: Header -->
+    
     <!-- Start: Navigation -->
     <div ng-include="'templates/_navigation.html'"></div>
     <!-- End: Navigation -->
+    
     <!-- Start: ui-view -->
     <div ui-view class="content"></div>
-    <!-- End: ui-view -->   
+    <!-- End: ui-view -->
+    
     <footer class="footer text--center">
     	<div ng-include="'templates/_footer.html'"></div>
     </footer>
+    
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-aria/angular-aria.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="/node_modules/angular-material/angular-material.js"></script>
+    <script>
+      // Include app dependency on ngMaterial
+      angular.module( 'logicline', ['ngMaterial']);
+    </script>
+    
   </body>
 </html>
