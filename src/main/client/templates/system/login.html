@@ -2,22 +2,25 @@
 <div ng-include="'templates/_preloader.html'"></div>
 <!-- End: Preloader -->
 
-<md-content ng-app="LoginForm" layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
+<md-content ng-app="content__inner--login" ng-submit="performLogin(loginForm.$valid, login);" novalidate layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
       <md-card flex="flex" flex-gt-sm="50" flex-gt-md="33">
         <md-toolbar>
           <div class="md-toolbar-tools">
-            <h2><span>Login Form</span></h2>
+            <h2><span>{{ 'LOGIN_HEADLINE' | translate }}</span></h2>
           </div>
         </md-toolbar>
         <md-card-content>
-          <form name="Form">
+          <form name="loginForm">
             <md-input-container class="md-block">
-              <label>Login</label>
-              <input type="text" name="email" ng-model="vm.formData.email" placeholder="login" required=""/>
+              <label>{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}</label>
+              <input type="text" name="email" ng-model="vm.formData.email" placeholder="{{'LOGIN_FORM_ORGANIZATION_ID' | translate}}"
+                     required ng-model="login.username" ng-class="{ 'has--error': loginForm.$submitted && ((loginForm.username.$error.required || loginForm.username.$invalid) || isLoginInvalid || isEmptyCredentials) }"
+                     />
               <div ng-messages="Form.email.$error" role="alert" multiple="">
                 <div ng-message="required" class="my-message">Please enter your email.</div>
               </div>
             </md-input-container>
+                
             <md-input-container class="md-block">
               <label>Password</label>
               <input type="password" name="password" ng-model="vm.formData.password" placeholder="password" required="" md-maxlength="16"/>
@@ -26,6 +29,7 @@
                 <div ng-message="md-maxlength" class="my-message">Too long.</div>
               </div>
             </md-input-container>
+                
             <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary">&nbsp Login &nbsp</md-button>
           </form>
         </md-card-content>
