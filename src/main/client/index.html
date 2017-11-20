@@ -12,57 +12,58 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic' rel='stylesheet' type='text/css'>
-    <!-- build:css -->
+    
+    <!-- build:css css/logicline.min.css -->
       <link href="./css/logicline.css" rel="stylesheet">
     <!-- endbuild -->
     
     <!-- build:js js/logicline.min.js -->
-    <!-- AngularJS -->
-    <script src="./lib/vendor/bower_components/angular/angular.js"></script>
-    <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+      <!-- AngularJS -->
+      <script src="./lib/vendor/bower_components/angular/angular.js"></script>
+      <script src="./lib/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-    <!-- Restangular + lodash -->
-    <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
-    <script type="text/javascript" src="./lib/vendor/bower_components/lodash/dist/lodash.min.js"></script>
-    <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script> 
-    <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload.min.js"></script> 
+      <!-- Restangular + lodash -->
+      <script type="text/javascript" src="./lib/vendor/bower_components/restangular/dist/restangular.min.js"></script>
+      <script type="text/javascript" src="./lib/vendor/bower_components/lodash/dist/lodash.min.js"></script>
+      <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script> 
+      <script type="text/javascript" src="./lib/vendor/bower_components/ng-file-upload/angular-file-upload.min.js"></script> 
 
-    <!-- AngularJS translate -->
-    <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate/angular-translate.min.js"></script>
-    <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
-    <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
-    
-    <!-- App -->
-    <script src="./js/app.js"></script>
-    <script src="./js/appRoutes.js"></script>
-    <script src="./js/appConfiguration.js"></script>
+      <!-- AngularJS translate -->
+      <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate/angular-translate.min.js"></script>
+      <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+      <script type="text/javascript" src="./lib/vendor/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
 
-    <!-- Controllers -->
-    <script src="./js/controllers/Controller.js"></script>
-    <script src="./js/controllers/LoginCtrl.js"></script>
-    <script src="./js/controllers/UserCtrl.js"></script>
-    <script src="./js/controllers/CustomerCtrl.js"></script>
-    <script src="./js/controllers/SearchCtrl.js"></script>
+      <!-- App -->
+      <script src="./js/app.js"></script>
+      <script src="./js/appRoutes.js"></script>
+      <script src="./js/appConfiguration.js"></script>
 
-    <!-- Services -->
-    <script src="./js/services/Service.js"></script>
-    <script src="./js/services/API/ApiBaseResponses.js"></script>
-    <script src="./js/services/API/User.js"></script>
-    <script src="./js/services/AUTH/authentication.js"></script>
-    <script src="./js/services/AUTH/authorization.js"></script>
-    <script src="./js/services/APP/search.js"></script>
+      <!-- Controllers -->
+      <script src="./js/controllers/Controller.js"></script>
+      <script src="./js/controllers/LoginCtrl.js"></script>
+      <script src="./js/controllers/UserCtrl.js"></script>
+      <script src="./js/controllers/CustomerCtrl.js"></script>
+      <script src="./js/controllers/SearchCtrl.js"></script>
 
-    <!-- Directives -->
-    <script src="./js/directives/Directive.js"></script>
-    <script src="./js/directives/GlobalLogout.js"></script>
-    <script src="./js/directives/SecurityAccess.js"></script>
+      <!-- Services -->
+      <script src="./js/services/Service.js"></script>
+      <script src="./js/services/API/ApiBaseResponses.js"></script>
+      <script src="./js/services/API/User.js"></script>
+      <script src="./js/services/AUTH/authentication.js"></script>
+      <script src="./js/services/AUTH/authorization.js"></script>
+      <script src="./js/services/APP/search.js"></script>
 
-    <!-- Filters -->
-    <script src="./js/filters/Filter.js"></script>
+      <!-- Directives -->
+      <script src="./js/directives/Directive.js"></script>
+      <script src="./js/directives/GlobalLogout.js"></script>
+      <script src="./js/directives/SecurityAccess.js"></script>
 
-    <!-- Vendors -->
-    <script src="./lib/vendor/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./lib/vendor/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+      <!-- Filters -->
+      <script src="./js/filters/Filter.js"></script>
+
+      <!-- Vendors -->
+      <script src="./lib/vendor/bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="./lib/vendor/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
     <!-- endbuild -->
 
     <script src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
@@ -73,19 +74,14 @@
       <div ng-include="'templates/_header.html'"></div>
     </header>
     <!-- End: Header -->
-    
     <!-- Start: Navigation -->
     <div ng-include="'templates/_navigation.html'"></div>
     <!-- End: Navigation -->
-    
     <!-- Start: ui-view -->
     <div ui-view class="content"></div>
-    <!-- End: ui-view -->  
-    
-    <!-- Start: Footer -->
+    <!-- End: ui-view -->   
     <footer class="footer text--center">
     	<div ng-include="'templates/_footer.html'"></div>
     </footer>
-    <!-- End: Footer -->
   </body>
 </html>
